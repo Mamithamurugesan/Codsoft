@@ -1,14 +1,14 @@
 def add(m,n):
-return m+n;
+  return m+n;
 def sub(m,n):
-return m-n
+  return m-n
 def mul(m,n):
-return m*n
+  return m*n
 def div(m,n):
-if n==0:
-return "error:division by zero!"
-else:
-return m/n
+  if n==0:
+    return "error:division by zero!"
+  else:
+    return m/n
 print("select operation:")
 print("1.Add")
 print("2.Subtract")
@@ -16,15 +16,15 @@ print ("3.Multiply")
 print("4.Divide")
 choice=input("enter choice (1/2/3/4):")
 if choice in ('1','2','3','4'):
-num1=float(input("enter first number:"))
-num2=float(input("enter second number:"))
-if choice=='1':
-print(f"{num1}+{num2}={add(num1,num2)}")
-elif choice=='2':
-print(f"{num1}-{num2}={sub(num1,num2)}")
-elif choice=='3':
-print(f"{num1}×{num2}={mul(num1,num2)}")
-elif choice=='4':
-print(f"{num1}/{num2}={div(num1,num2)}")
+  num1=float(input("enter first number:"))
+  num2=float(input("enter second number:"))
+  if choice=='1':
+    print(f"{num1}+{num2}={add(num1,num2)}")
+  elif choice=='2':
+    print(f"{num1}-{num2}={sub(num1,num2)}")
+  elif choice=='3':
+    print(f"{num1}×{num2}={mul(num1,num2)}")
+  elif choice=='4':
+    print(f"{num1}/{num2}={div(num1,num2)}")
 else:
-print("invalid input.please enter a valid number(1/2/3/4).")
+  print("invalid input.please enter a valid number(1/2/3/4).")
